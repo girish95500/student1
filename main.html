@@ -1,22 +1,41 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Student Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-	
-	<ol>
-		<p>We can optimize a solution using both time and space optimization. To optimize a program,</p>
-	<li>We can reduce the time taken to run the program and increase the space occupied</li>
-	<li>We can reduce the memory usage of the program and increase it’s total run time</li>
-	<li>We can reduce both time and space complexity by deploying relevant algorithms</li>
-	
-</ol>
+  <h1>Student Management System</h1>
+
+  <!-- Search box -->
+  <input type="text" id="searchInput" placeholder="Search by name, email, or degree">
+  
+  <!-- Students list -->
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Degree</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentsList">
+      <!-- Student data will be added here dynamically -->
+    </tbody>
+  </table>
+
+  <!-- Form to add/edit students -->
+  <h2>Add/Edit Student</h2>
+  <form id="studentForm">
+    <!-- Form inputs will be added here dynamically -->
+    <button type="submit" id="submitButton">Add Student</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
